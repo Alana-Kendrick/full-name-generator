@@ -20,13 +20,13 @@ public class FullNameApplication {
         String suffix = scanner.nextLine();
         
         if (middleName.isEmpty()) {
-            fullName = firstName + " " + lastName + " " + suffix;
+            fullName = firstName + " " + lastName + ", " + suffix;
         } else if (suffix.isEmpty()) {
             fullName = firstName + " " + middleName + " " + lastName;
         } else if (middleName.isEmpty() && suffix.isEmpty()) {
             fullName = firstName + " " + lastName;
         } else {
-            fullName = firstName + " " + middleName + " " + lastName + " " + suffix;
+            fullName = firstName + " " + middleName + " " + lastName + ", " + suffix;
         }
 
         System.out.println(fullName);
